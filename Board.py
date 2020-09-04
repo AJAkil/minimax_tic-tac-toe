@@ -6,8 +6,6 @@ class Board:
             ['-', '-', '-']
         ]
 
-        self.turn = 'X'
-
         self._ROWS = 3
         self._COLS = 3
 
@@ -79,3 +77,6 @@ class Board:
 
     def get_board(self):
         return self.curr_board_state
+
+    def set_board_state(self, board_state):
+        self.curr_board_state = board_state
